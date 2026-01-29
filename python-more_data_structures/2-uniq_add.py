@@ -5,7 +5,7 @@ def uniq_add(my_list=[]):
     if my_list:
         unique_list = list(set(my_list))
 
-        for (i in unique_list):
+        for i in unique_list:
             rtn_sum += i
 
     return (rtn_sum)
