@@ -6,6 +6,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     return ((new_tuple_a[0] + new_tiple_b[0], new_tuple_a[1] + new_tiple_b[1]))
 
+
 def tuple_check(t_check=()):
     if (len(t_check) == 0):
         return ((0, 0))
