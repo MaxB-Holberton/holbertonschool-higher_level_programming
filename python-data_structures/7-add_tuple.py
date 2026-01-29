@@ -17,4 +17,3 @@ def tuple_check(t_check=()):
         return ((t_check[0], t_check[1]))
 
     return (t_check)
-
