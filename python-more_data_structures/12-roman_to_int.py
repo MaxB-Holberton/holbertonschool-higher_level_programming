@@ -19,11 +19,11 @@ def convert_input(i):
         return (0)
 
 def roman_to_int(roman_string):
+    rtn = 0
     if roman_string == None:
         return (0)
-    #if not string return 0
-    else:
-        rtn = 0
+
+    if isinstance(roman_string, str):
         last = roman_string[0]
         sign = True
         for i in roman_string:
