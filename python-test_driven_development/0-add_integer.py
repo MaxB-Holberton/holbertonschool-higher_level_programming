@@ -28,9 +28,9 @@ def add_integer(a, b=98):
         int: the result of the addition
     """
 
-    if type(a) not in (int, float):
+    if isinstance(a, (int, float)) is False:
         raise TypeError("a must be an integer")
-    if type(b) not in (int, float):
+    if isinstance(b, (int, float)) is False:
         raise TypeError("b must be an integer")
 
     return(convert_float(a) + convert_float(b))

@@ -8,3 +8,7 @@ try:
     say_my_name(12, "White")
 except Exception as e:
     print(e)
+try:
+    say_my_name("White", 12)
+except Exception as e:
+    print(e)

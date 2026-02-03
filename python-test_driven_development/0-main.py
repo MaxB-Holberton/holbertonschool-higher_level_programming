@@ -19,3 +19,12 @@ try:
     print(add_integer(None))
 except Exception as e:
     print(e)
+try:
+    print(add_integer(2.0 ** 1000, 3))
+except Exception as e:
+    print(e)
+
+try:
+    print(add_integer(float('nan'), 3))
+except Exception as e:
+    print(e)
