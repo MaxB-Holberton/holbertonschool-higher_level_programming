@@ -3,6 +3,7 @@
     A module to add 2 ints together
 """
 
+
 def convert_float(val):
     """
         convert floats to ints
@@ -14,8 +15,9 @@ def convert_float(val):
             int: the converted number
     """
     if type(val) is float:
-        return(int(val))
-    return(val)
+        return (int(val))
+    return (val)
+
 
 def add_integer(a, b=98):
     """
@@ -33,4 +35,4 @@ def add_integer(a, b=98):
     if isinstance(b, (int, float)) is False:
         raise TypeError("b must be an integer")
 
-    return(convert_float(a) + convert_float(b))
+    return (convert_float(a) + convert_float(b))
