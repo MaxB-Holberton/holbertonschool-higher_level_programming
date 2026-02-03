@@ -15,3 +15,19 @@ my_square_3 = Square(3, (3, 0))
 my_square_3.my_print()
 
 print("--")
+
+try:
+    my_square_3 = Square(-3, (3, 0))
+    my_square_3.my_print()
+except Exception as e:
+    print(e)
+
+print("--")
+
+try:
+    my_square_3 = Square(3, (-3, 0))
+    my_square_3.my_print()
+except Exception as e:
+    print(e)
+
+print("--")
