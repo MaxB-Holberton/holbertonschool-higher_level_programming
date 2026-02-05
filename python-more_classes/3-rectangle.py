@@ -3,6 +3,8 @@
 """
     The module for the rectangle
 """
+
+
 class Rectangle():
     """
         the rectangle class
@@ -80,4 +82,3 @@ class Rectangle():
             raise ValueError("width must be >= 0")
 
         self.__width = val
-

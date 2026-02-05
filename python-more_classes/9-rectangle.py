@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-
 """
     The module for the rectangle
 """
+
+
 class Rectangle():
     """
         the rectangle class
@@ -42,7 +43,6 @@ class Rectangle():
             return rect_1
         else:
             return rect_2
-
 
     def __init__(self, width=0, height=0):
         """

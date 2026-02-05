@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-
 """
     The module for the rectangle
 """
+
+
 class Rectangle():
     """
         the rectangle class
@@ -57,8 +58,6 @@ class Rectangle():
         self.__width = width
         self.__height = height
 
-
-
     @property
     def width(self):
         """
@@ -96,4 +95,3 @@ class Rectangle():
             raise ValueError("width must be >= 0")
 
         self.__width = val
-

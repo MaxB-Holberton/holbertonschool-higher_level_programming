@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-
 """
     The module for the rectangle
 """
+
+
 class Rectangle():
     """
         the rectangle class
@@ -60,8 +61,6 @@ class Rectangle():
         """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
-
-
 
     @property
     def width(self):

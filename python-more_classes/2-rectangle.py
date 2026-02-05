@@ -3,6 +3,8 @@
 """
     The module for the rectangle
 """
+
+
 class Rectangle():
     """
         the rectangle class

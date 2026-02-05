@@ -3,6 +3,8 @@
 """
     The module for the rectangle
 """
+
+
 class Rectangle():
     """
         the rectangle class
@@ -42,7 +44,6 @@ class Rectangle():
             for the instance
         """
         return f"Rectangle({self.__width}, {self.__height})"
-
 
     def __init__(self, width=0, height=0):
         """
@@ -88,4 +89,3 @@ class Rectangle():
             raise ValueError("width must be >= 0")
 
         self.__width = val
-
