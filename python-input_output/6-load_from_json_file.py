@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-from json import loads
 """
     Module to convert JSON strings to python objects
 """
+
+from json import loads
 
 
 def load_from_json_file(filename):

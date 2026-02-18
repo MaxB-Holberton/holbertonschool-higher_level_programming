@@ -1,13 +1,15 @@
 #!/usr/bin/python3
+"""
+    Module to read and write to json files
+"""
+
+
 import sys
 import os
 
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 
-"""
-    Module to read and write to json files
-"""
 
 filename = "add_item.json"
 

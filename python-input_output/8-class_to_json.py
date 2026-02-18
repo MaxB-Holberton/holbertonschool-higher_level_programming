@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
     Module for returning a dictionary as a JSON string
 """

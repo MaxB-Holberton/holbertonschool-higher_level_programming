@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-from json import dumps
 """
     Module to write to a file
 """
+
+
+from json import dumps
 
 
 def save_to_json_file(my_obj, filename):
