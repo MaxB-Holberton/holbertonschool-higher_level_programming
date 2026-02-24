@@ -41,6 +41,14 @@ class BasicServer(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(json.dumps(dataset).encode())
 
+        elif self.path == '/status':
+            dataset = {
+                    "version": "1.0",
+                    "description": "A simple API built with http.server"
+                }
+            self.send_response(200)
+            self.wfile.write('Ok'.encode())
+
         else:
             self.send_response(404)
             self.send_header('Content-type', 'text/plain')

@@ -20,7 +20,7 @@ def data():
 
 @app.route("/status")
 def status():
-    return "Ok"
+    return "OK"
 
 @app.route("/users/<username>")
 def list_user(username):
@@ -28,7 +28,7 @@ def list_user(username):
         return jsonify({'error': 'Username is required'}), 400
 
     if username not in users_dict:
-        return jsonify({'error': 'User not found'}), 401
+        return jsonify({'error': 'User not found'}), 404
 
     return jsonify(users_dict[username])
 
