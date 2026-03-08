@@ -24,7 +24,7 @@ def run_database():
     print(new_state.id)
 
 
-if __name___ = '__main__':
+if __name__ = '__main__':
     """
         the main function
     """
