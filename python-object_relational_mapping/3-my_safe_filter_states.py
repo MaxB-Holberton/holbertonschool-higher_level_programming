@@ -27,4 +27,7 @@ if db_cursor:
 
 
 if __name___ = '__main__':
+    """
+        the main function
+    """
     run_database()

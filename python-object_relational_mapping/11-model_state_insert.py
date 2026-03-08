@@ -25,4 +25,7 @@ def run_database():
 
 
 if __name___ = '__main__':
+    """
+        the main function
+    """
     run_database()
