@@ -1,11 +1,11 @@
 #!/usr/bin/python3
+from sys import argv
+import MySQLdb
+
+
 """
     Module for connecting to MySQL and grabbing states
 """
-
-
-from sys import argv
-import MySQLdb
 
 
 def run_database():
