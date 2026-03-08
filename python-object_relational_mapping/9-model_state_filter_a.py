@@ -1,4 +1,4 @@
-#!/ussr/bin/python3
+#!/usr/bin/python3
 """
     Module for connecting to MySQL and grabbing states
 """
@@ -11,12 +11,16 @@ from model_state import Base, State
 
 
 def run_database():
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(sys.argv[1], sys.argv[2], sys.argv[3]))
+    engine = create_engine('mysql+mysqldb://{}:\
+        {}@localhost:3306/{}'.format(sys.argv[1], sys.argv[2], sys.argv[3]))
 
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for state in session.query(State).filter(State.name.contains('a')).order_by(State.id):
+    states = session.query(State).filter(
+        State.name.contains('a')).order_by(State.id)
+
+    for state in states:
         print("{}: {}".format(state.id, state.name))
 
     session.close()
