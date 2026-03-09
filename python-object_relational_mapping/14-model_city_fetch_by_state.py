@@ -6,6 +6,7 @@ from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
+from model_city import City
 
 
 def run_database():
@@ -19,13 +20,14 @@ def run_database():
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).filter(
-        State.name.contains('a'))
+    results = session.query(State, City)
+    .join(City, State.id == City.state_id)
+	.order_by(City.id)
+	.all()
 
-    for state in states:
-        session.delete(state)
+    for city, state in results:
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
 
-    session.commit()
     session.close()
 
 

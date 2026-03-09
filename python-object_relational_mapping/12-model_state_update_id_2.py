@@ -19,8 +19,8 @@ def run_database():
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    searched_state = session.query(State).filter(State.id == 2)
-    searched_state.name = 'New Mexico'
+    searched_state = session.query(State).filter(State.id == 2).first()
+    setattr(searched_state, 'name', 'New Mexico')
     session.commit()
 
     session.close()
