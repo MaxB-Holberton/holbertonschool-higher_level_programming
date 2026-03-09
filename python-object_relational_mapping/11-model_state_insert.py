@@ -1,13 +1,11 @@
 #!/usr/bin/python3
+"""
+    Module for connecting to MySQL and grabbing states
+"""
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 from model_state import Base, State
-
-
-"""
-    Module for connecting to MySQL and grabbing states
-"""
 
 
 def run_database():
