@@ -2,7 +2,7 @@
 """
     Module for creating an ORM model
 """
-from sqlalchemy import Column, String, Integer
+from sqlalchemy import Column, String, Integer, ForeignKey
 from sqlalchemy.orm import declarative_base
 
 
