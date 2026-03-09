@@ -20,10 +20,10 @@ def run_database():
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    results = session.query(State, City)
+    results = (session.query(State, City)
     .join(City, State.id == City.state_id)
-	.order_by(City.id)
-	.all()
+    .order_by(City.id)
+    .all())
 
     for city, state in results:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
