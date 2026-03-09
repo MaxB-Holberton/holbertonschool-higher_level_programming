@@ -14,8 +14,8 @@ def run_database():
                          password=argv[2], database=argv[3])
 
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT cities.id, cities.name, states.name FROM cities \
-        JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC")
+    db_cursor.execute("""SELECT cities.id, cities.name, states.name FROM cities
+        JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC""")
 
     for city in db_cursor.fetchall():
         print(city)

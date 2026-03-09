@@ -14,8 +14,8 @@ def run_database():
                          password=argv[2], database=argv[3])
 
     db_cursor = db.cursor()
-    db_cursor.execute("SELECT * FROM states WHERE name \
-        LIKE BINARY %s ORDER BY states.id ASC", argv[4])
+    db_cursor.execute("""SELECT * FROM states WHERE name
+        LIKE BINARY %s ORDER BY states.id ASC""", argv[4])
 
     for state in db_cursor.fetchall():
         print(state)
