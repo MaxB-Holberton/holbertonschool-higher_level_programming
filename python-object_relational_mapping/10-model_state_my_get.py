@@ -12,7 +12,7 @@ def run_database():
     """
         Function to connect to the database and perform the sort
     """
-    url = 'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
+    url = "mysql+mysqldb://{}:{}@localhost:3306/{}".format(
         argv[1], argv[2], argv[3])
     engine = create_engine(url)
 
