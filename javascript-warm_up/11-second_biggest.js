@@ -6,6 +6,5 @@ if (argvLen === 2 || argvLen === 3) {
 } else {
   const item = argv.slice(2).map(Number);
   item.sort((a, b) => a - b);
-  console.log(item);
   console.log(item[item.length - 2]);
 }
