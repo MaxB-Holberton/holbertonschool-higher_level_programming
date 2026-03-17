@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const argv = process.argv.length;
+const argv = process.argv;
 const argvLen = argv.length;
 if (argvLen === 2 || argvLen === 3) {
   console.log(0);
