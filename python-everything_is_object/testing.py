@@ -1,3 +1,5 @@
-s1 = "Best School"
-s2 = s1
-print(s1 == s2)
+a = [1, 2, 3]
+print(id(a))
+
+a += [4]
+print(id(a))
