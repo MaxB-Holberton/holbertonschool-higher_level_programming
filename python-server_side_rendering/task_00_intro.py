@@ -29,8 +29,9 @@ def generate_invitations(template, attendees_list):
         invite_content = template
         for key, value in invite.items():
             replacement_values = "{"+f"{key}"+"}"
-            new_val = value or "N/A"
-            invite_content = invite_content.replace(replacement_values, new_val)
+            if value is None:
+                value = "N/A"
+            invite_content = invite_content.replace(replacement_values, value)
         if not exists(f"output_{index}.txt"):
             with open(f"output_{index}.txt", "w") as file:
                 file.write(invite_content)
